@@ -2,10 +2,7 @@ package com.abhishek.diceroller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.random.Random
 
@@ -15,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val rollButton: Button = findViewById(R.id.roll_button);
+        val rollButton: LinearLayout = findViewById(R.id.roll_button);
         rollButton.setOnClickListener {
             rollDice()
         }
